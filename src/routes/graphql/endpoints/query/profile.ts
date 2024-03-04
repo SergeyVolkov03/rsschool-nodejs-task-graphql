@@ -5,9 +5,9 @@ import {
   GraphQLNonNull,
   GraphQLObjectType,
 } from 'graphql';
-import { UUIDType } from '../types/uuid.js';
+import { UUIDType } from '../../types/uuid.js';
 import { Profile } from '@prisma/client';
-import { Context } from '../types/context.js';
+import { Context } from '../../types/context.js';
 import { memberIdEnumType, memberObjectType } from './member-type.js';
 import { userType } from './user.js';
 

@@ -1,6 +1,6 @@
 import { GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLString } from 'graphql';
-import { UUIDType } from '../types/uuid.js';
-import { Context } from '../types/context.js';
+import { UUIDType } from '../../types/uuid.js';
+import { Context } from '../../types/context.js';
 import { Post } from '@prisma/client';
 import { userType } from './user.js';
 

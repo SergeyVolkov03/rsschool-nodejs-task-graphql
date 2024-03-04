@@ -5,9 +5,9 @@ import {
   GraphQLList,
   GraphQLObjectType,
 } from 'graphql';
-import { MemberTypeId } from '../../member-types/schemas.js';
+import { MemberTypeId } from '../../../member-types/schemas.js';
 import { MemberType } from '@prisma/client';
-import { Context } from '../types/context.js';
+import { Context } from '../../types/context.js';
 import { profileType } from './profile.js';
 
 export const memberIdEnumType = new GraphQLEnumType({

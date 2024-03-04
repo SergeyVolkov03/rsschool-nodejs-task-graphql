@@ -5,10 +5,10 @@ import {
   GraphQLObjectType,
   GraphQLString,
 } from 'graphql';
-import { UUIDType } from '../types/uuid.js';
+import { UUIDType } from '../../types/uuid.js';
 import { profileType } from './profile.js';
 import { User } from '@prisma/client';
-import { Context } from '../types/context.js';
+import { Context } from '../../types/context.js';
 import { postType } from './post.js';
 
 export const userType: GraphQLObjectType = new GraphQLObjectType({
