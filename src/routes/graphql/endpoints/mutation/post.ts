@@ -24,7 +24,7 @@ type DeletePostInputType = {
 };
 
 const CreatePostInputObjectType = new GraphQLInputObjectType({
-  name: 'CreatePostInputObjectType',
+  name: 'CreatePostInput',
   fields: () => ({
     authorId: { type: new GraphQLNonNull(UUIDType) },
     title: { type: GraphQLString },
@@ -33,7 +33,7 @@ const CreatePostInputObjectType = new GraphQLInputObjectType({
 });
 
 const ChangePostInputObjectType = new GraphQLInputObjectType({
-  name: 'ChangePostInputObjectType',
+  name: 'ChangePostInput',
   fields: () => ({
     title: { type: GraphQLString },
     content: { type: GraphQLString },

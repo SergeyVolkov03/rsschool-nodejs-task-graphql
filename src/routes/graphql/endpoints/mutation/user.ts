@@ -33,7 +33,7 @@ type SubscriptionUserInputType = {
 };
 
 const CreateUserInputObjectType = new GraphQLInputObjectType({
-  name: 'CreateUserInputObjectType',
+  name: 'CreateUserInput',
   fields: () => ({
     name: { type: GraphQLString },
     balance: { type: GraphQLFloat },
@@ -41,7 +41,7 @@ const CreateUserInputObjectType = new GraphQLInputObjectType({
 });
 
 const ChangeUserInputObjectType = new GraphQLInputObjectType({
-  name: 'ChangeUserInputObjectType',
+  name: 'ChangeUserInput',
   fields: () => ({
     name: { type: GraphQLString },
     balance: { type: GraphQLFloat },

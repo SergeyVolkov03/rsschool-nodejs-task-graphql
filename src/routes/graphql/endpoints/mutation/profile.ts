@@ -34,7 +34,7 @@ type DeleteProfileInputType = {
 };
 
 const createProfileInputObjectType = new GraphQLInputObjectType({
-  name: 'createProfileInputObjectType',
+  name: 'CreateProfileInput',
   fields: () => ({
     userId: { type: new GraphQLNonNull(UUIDType) },
     yearOfBirth: { type: GraphQLInt },
@@ -44,7 +44,7 @@ const createProfileInputObjectType = new GraphQLInputObjectType({
 });
 
 const changeProfileInputObjectType = new GraphQLInputObjectType({
-  name: 'changeProfileInputObjectType',
+  name: 'ChangeProfileInput',
   fields: () => ({
     yearOfBirth: { type: GraphQLInt },
     isMale: { type: GraphQLBoolean },
